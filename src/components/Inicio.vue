@@ -1,17 +1,13 @@
 <template>
-  <div id="app">
-    <router-view />
+  <div>
+    <h1>Bienvenidos al mundo de comida</h1>
   </div>
 </template>
 
 <script>
-//import NinjaOro from './components/NinjaOro.vue'
 
 export default {
-  name: 'App',
-  //components: {
-    //NinjaOro
-  //}
+  name: 'Inicio',
 }
 </script>
 
