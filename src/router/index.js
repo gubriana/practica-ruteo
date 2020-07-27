@@ -5,7 +5,10 @@ import Inicio from '@/components/Inicio.vue';  // asumiendo que hicimos este com
 import Login from '@/components/Login.vue'; 
 import NoEncontrada from '@/components/NoEncontrada.vue';
 import Categoria from '@/components/Categoria.vue';
-import Cualquiera from '@/components/Cualquiera.vue';
+import Restoran from '@/components/Restoran.vue';
+import About from '@/components/About.vue';
+import Reviews from '@/components/Reviews.vue';
+import Images from '@/components/Images.vue';
 
 
 Vue.use(VueRouter);    // instalamos explícitamente el router
@@ -22,8 +25,22 @@ export default new VueRouter({
             component: Login
         },
         {
-            path: '/:cualquiera', 
-            component: Cualquiera
+            path: '/:restoran', 
+            component: Restoran,
+            children: [
+                {
+                    path: '', 
+                    component: About
+                },
+                {
+                    path: 'reviews', 
+                    component: Reviews
+                },
+                {
+                    path: 'images', 
+                    component: Images
+                },
+            ]
         },        
         {
             path: '/categoria/:nombre', 

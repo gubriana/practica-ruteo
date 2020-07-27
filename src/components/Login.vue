@@ -15,8 +15,9 @@
                     <label for="password"></label>
                 </div>
                 <br>
+                <br>
                 <div class="col s12">
-                    <a class="waves-effect waves-light btn-large"><i class="material-icons right">send</i>button</a>
+                    <button class="waves-effect waves-light btn-large right"><i class="material-icons right">send</i>button</button>
                 </div>
             </div>
         </form>

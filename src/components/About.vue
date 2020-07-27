@@ -2,7 +2,7 @@
   <div class="container">
      <div class="row">
       <div class="col s12">
-        <h3>Acerca de  {{ $route.params.cualquiera }}</h3>
+        <h3>Acerca de  {{ $route.params.restoran }}</h3>
         <br>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem doloremque, quia vero enim cum reprehenderit corrupti totam possimus quo nisi veritatis unde corporis? Soluta ab accusantium rem. Architecto, deserunt non.</p>
       </div>
@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: 'Cualquiera'
+  name: 'About'
 }
 </script>
 
