@@ -1,12 +1,19 @@
 <template>
-  <div>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><router-link v-bind:to="{ path: '/about' }">About</router-link></li>
+        <li><router-link v-bind:to="{ path: `/${$route.params.restoran}/reviews`}">Reviews</router-link></li>
+        <li><router-link v-bind:to="{ path: `/${$route.params.restoran}/images`}">Photo</router-link></li>
+      </ul>
+    </nav>
     <router-view />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Cualquiera'
+  name: 'Restoran'
 }
 </script>
 
