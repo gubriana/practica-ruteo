@@ -2,9 +2,9 @@
   <div class="container">
     <nav>
       <ul>
-        <li><router-link v-bind:to="{ path: '/about' }">About</router-link></li>
-        <li><router-link v-bind:to="{ path: `/${$route.params.restoran}/reviews`}">Reviews</router-link></li>
-        <li><router-link v-bind:to="{ path: `/${$route.params.restoran}/images`}">Photo</router-link></li>
+        <li><router-link v-bind:to="{ name: 'about' }">About</router-link></li>
+        <li><router-link v-bind:to="{ name: 'reviews' }">Reviews</router-link></li>
+        <li><router-link v-bind:to="{ name: 'images' }">Photo</router-link></li>
       </ul>
     </nav>
     <router-view />
@@ -13,7 +13,10 @@
 
 <script>
 export default {
-  name: 'Restoran'
+  name: 'Restoran',
+  props: {
+    restoran: String,
+  }
 }
 </script>
 

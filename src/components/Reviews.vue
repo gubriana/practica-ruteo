@@ -2,7 +2,7 @@
   <div class="container">
      <div class="row">
       <div class="col s12">
-        <h3>Acerca de  {{ $route.params.restoran }}</h3>
+        <h3>Acerca de  {{ restoran }}</h3>
         <br>
         <div class="row right">
           <div class="col s4">
@@ -28,7 +28,10 @@
 
 <script>
 export default {
-  name: 'Reviews'
+  name: 'Reviews',
+  props: {
+    restoran: String,
+  },
 }
 </script>
 

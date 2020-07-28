@@ -18,27 +18,35 @@ export default new VueRouter({
     routes: [
         {
             path: '/', 
-            component: Inicio //nombre del componnete q queremos su prpia pag
+            component: Inicio, //nombre del componnete q queremos su prpia pag
         },
         {
             path: '/login', 
-            component: Login
+            component: Login,
         },
         {
             path: '/:restoran', 
             component: Restoran,
+            name: Restoran,
+            props:true,
             children: [
                 {
                     path: '', 
-                    component: About
+                    component: About,
+                    name: 'about',
+                    props: true,
                 },
                 {
                     path: 'reviews', 
-                    component: Reviews
+                    component: Reviews,
+                    name: 'reviews',
+                    props: true,
                 },
                 {
                     path: 'images', 
-                    component: Images
+                    component: Images,
+                    name: 'images',
+                    props: true,
                 },
             ]
         },        
@@ -51,6 +59,7 @@ export default new VueRouter({
 
                 }
             ]*/
+            // name es un apodo que se le puede dar a una ruta
         },
         {
             path: '*',

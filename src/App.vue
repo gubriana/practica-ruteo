@@ -14,6 +14,7 @@
 
 export default {
   name: 'App',
+  props: true
   //components: {
     //NinjaOro
   //}
@@ -26,7 +27,8 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.0);
   margin-top: 60px;
 }
 </style>

@@ -36,7 +36,8 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #ffffff;
+  font-weight: bolder;
   margin-top: 60px;
 }
 img {
@@ -46,5 +47,9 @@ img {
 li {
   display: inline-block;
   margin: 0 10px;
+}
+h3 {
+  color:#ffffff;
+  font-weight: bolder;
 }
 </style>

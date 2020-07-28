@@ -2,7 +2,7 @@
   <div class="container">
      <div class="row">
       <div class="col s12">
-        <h3>Fotos de  {{ $route.params.restoran }}</h3>
+        <h3>Fotos de  {{ restoran }}</h3>
         <br>
           <div class="carousel">
             <a class="carousel-item" href="#one!"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5XmUA-nQziHK-BDXOBXgfbUkuxniVeXSfQakEq0-0cWzIS3M&s"></a>
@@ -19,6 +19,9 @@ import M from 'materialize-css'
 
 export default {
   name: 'Images',
+  props: {
+    restoran: String,
+  },
   mounted: function() {
     var elems = document.querySelectorAll('.carousel');
     M.Carousel.init(elems, {});
